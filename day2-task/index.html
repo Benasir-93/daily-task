@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difference b/w Document and Window Object</title>
+    <style>
+        div{
+            background-color: rgb(245, 226, 226);
+            color: brown;
+            text-align: center;
+        }
+        table{
+            border:2px solid rgb(7, 7, 7);
+            border-collapse: collapse;
+            margin: auto;
+
+        }
+        table th{
+            background-color: red;
+            color: white;
+            padding: 10px;
+        }
+        table td{
+            padding: 7px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+<div>    <h1>Difference b/w Document and Window Object</h1>
+</div>    
+<table>
+    <tr>
+        <th>Document</th>
+        <th>Window</th>
+    </tr>
+    <tr>
+        <td>
+            It represents any HTML document or web page that is loaded in the browser.
+    </td>
+    <td>It represents a browser window or frame that displays the contents of the webpage.</td>
+</tr>
+
+<tr><td>
+    It is loaded inside the window.
+
+</td>
+<td>It is the very first object that is loaded in the browser.</td>
+</tr>
+<tr>
+    <td>It is the object of window property.</td>
+<td>It is the object of the browser.</td>
+</tr>
+<tr><td>All the tags, elements with attributes in HTML are part of the document.</td>
+<td>Global objects, functions, and variables of JavaScript are members of the window object.</td></tr>
+
+<tr><td>We can access the document from a window using the window. document</td>
+<td>We can access the window from the window only. i.e. window.window</td></tr>
+<tr><td>The document is part of BOM (browser object model) and dom (Document object model)</td>
+<td>The window is part of BOM, not DOM.</td></tr>
+</table>
+</body>
+</html>
