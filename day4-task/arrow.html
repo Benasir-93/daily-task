@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+  <li>  Print odd numbers in an array</li>
+<li>Convert all the strings to title caps in a string array</li>
+<li>Sum of all numbers in an array</li>
+<li>Return all the prime numbers in an array</li>
+<li>Return all the palindromes in an array</li>
+  </ul>
+<script>
+//a)Print odd numbers in an array
+let oddNumbers = (array) => {
+    array=[1,2,3,4,5,6,]
+                   for(var i = 0 ; i< array.length ; i++){
+                        if(array[i]%2!=0){
+                           console.log(array[i])
+                        } 
+                   }
+                        }
+                          oddNumbers();
+                          //b)Convert all the strings to title caps in a string array
+                          let titleCase = (str) => {
+                            str = str.toLowerCase().split(' ');
+                            for (var i = 0; i < str.length; i++) {
+                              str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+                            } 
+                            return str.join(' ');
+                          }    
+        
+           console.log(titleCase("hi, this is benasir from guvi tamil batch."));
+//c)Sum of all numbers in an array
+let sum = (array)=>{
+    array=[2,4,6,8];
+    var sum = 0;
+         for(var i = 0 ; i< array.length ; i++){
+            sum = sum + array[i];
+          }
+          console.log( sum);
+          }
+          sum();
+//d)Return all the prime numbers in an array
+
+var primeNumber = (numArray) => {
+    numArray=[7,13,16,17,51,6];
+    numArray = numArray.filter((number) => {
+      for (var i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) return false;
+      }
+      return true;
+    });
+    console.log(numArray);
+}
+primeNumber();
+//e)Return all the palindromes in an array
+
+const Palindrome = (arr, n) =>
+    {
+        // Traversing each element of the array
+        // and check if it is palindrome or not
+        for (let i = 0; i < n; i++)
+        {
+          var  arr=[4,3,2,1];
+           var n=2;
+            let ans = isPalindrome(arr[i]);
+            if (ans == false)
+                console.log( false);
+        }
+        console.log(true);
+    }
+    Palindrome();
+    </script>
+  </body>
+  </html>
