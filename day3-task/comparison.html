@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function comparison(){
+  var obj1={name:"person1",age:5};
+var obj2={age:5,name:"person1"};
+console.log(Object.keys(obj1).length);
+console.log(Object.keys(obj2).length);
+if(Object.keys(obj1).length !== Object.keys(obj2).length) {
+return false;
+}
+for( var key in obj1){
+  if(!obj2.hasOwnProperty(key)|| obj1[key] !== obj2[key]){
+    return false;}
+}
+return true;
+}
+const result =comparison();
+console.log(result)
+    </script>
+</body>
+</html>
